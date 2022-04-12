@@ -7,11 +7,18 @@
 
 import SwiftUI
 
+
+ 
+
 @main
 struct WasteTimeRecordApp: App {
+   
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Tab()
         }
     }
 }
